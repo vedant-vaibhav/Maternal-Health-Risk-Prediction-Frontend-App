@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #4635b1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+#languageSwitch {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4635b1;
+  border: 2px solid #4635b1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#languageSwitch:hover {
+  background-color: #4635b1;
+  color: white;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hospital-image {
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hospital-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: #4635b1;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #4635b1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #4635b1;
+}
+
+/* Result Styling */
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e7f3e7;
+  color: #333;
+  border: 1px solid #4635b1;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+}

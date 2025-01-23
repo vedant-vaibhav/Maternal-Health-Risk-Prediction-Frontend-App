@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maternal Health Risk Prediction</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="headerTitle">Maternal Health Risk Prediction</h1>
+      <button id="languageSwitch" onclick="switchLanguage()">
+        Switch to Hindi
+      </button>
+    </header>
+    <div class="container">
+      <div class="image-gallery">
+        <img
+          src="./assets/img1.jpg"
+          alt="Hospital Scene 1"
+          class="hospital-image"
+        />
+        <img
+          src="./assets/img2.jpg"
+          alt="Hospital Scene 2"
+          class="hospital-image"
+        />
+        <img
+          src="./assets/img3.jpg"
+          alt="Hospital Scene 3"
+          class="hospital-image"
+        />
+      </div>
+      <h1 id="formTitle">Enter Patient Details</h1>
+      <form id="healthForm">
+        <label for="age" id="labelAge">Age</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Enter age"
+          required
+        />
+
+        <label for="systolic" id="labelSystolic">Systolic Blood Pressure</label>
+        <input
+          type="number"
+          id="systolic"
+          name="systolic"
+          placeholder="Enter systolic BP"
+          required
+        />
+
+        <label for="diastolic" id="labelDiastolic"
+          >Diastolic Blood Pressure</label
+        >
+        <input
+          type="number"
+          id="diastolic"
+          name="diastolic"
+          placeholder="Enter diastolic BP"
+          required
+        />
+
+        <label for="glucose" id="labelGlucose">Blood Glucose Level</label>
+        <input
+          type="number"
+          id="glucose"
+          name="glucose"
+          placeholder="Enter glucose level"
+          required
+        />
+
+        <label for="temperature" id="labelTemperature">Body Temperature</label>
+        <input
+          type="number"
+          step="0.1"
+          id="temperature"
+          name="temperature"
+          placeholder="Enter body temperature"
+          required
+        />
+
+        <label for="heartRate" id="labelHeartRate">Heart Rate</label>
+        <input
+          type="number"
+          id="heartRate"
+          name="heartRate"
+          placeholder="Enter heart rate"
+          required
+        />
+
+        <button type="submit" id="submitButton">Predict Risk Level</button>
+      </form>
+      <div id="result" class="result" style="display: none"></div>
+    </div>
+  </body>
+</html>
